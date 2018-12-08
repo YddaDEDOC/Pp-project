@@ -1,0 +1,95 @@
+.animation {
+  background: #40b7b7;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  animation-name: myanimation;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  /* animation-delay: 2s; */
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-in-out; */
+}
+#blue{
+  background: #40b7b7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  animation-name: blu;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes blu {
+  0% {}
+  99% { width: 100%; height: 100%;}
+  100% {height: 1px; width: 1px; }
+}
+#ani-2{
+  background: #323232;
+  width: 2px;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  animation-name: myanimation;
+  animation-duration: 0.9s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.bot {
+  background: #323232;
+  width: 100%;
+  height: 1px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  animation-name: backstage ;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.bot-2 {
+  background: #40b7b7;
+  width: 100%;
+  height: 1px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  animation-name: frontstage ;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/* @keyframes myanimation {
+  0% {background-color: white; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+  25% {background-color: red; left: 300px; top: 0px; border-radius: 50% 0 0 0;}
+  50% {background-color: green; left: 300px; top: 300px; border-radius: 50% 50% 0 0}
+  75% {background-color: blue; left: 0px; top: 300px; border-radius: 50% 50% 50% 0;}
+  100% {background-color: white; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+} */
+@keyframes backstage {
+  0% {}
+  20% {height: 100%; border-left: 10px border-color:#323232;}
+  95% {height: 100%; bottom: 99%; border: 50px background: transparent;}
+  100% {height: 100%; bottom: 99.9%; border: 50px background: transparent;}
+}
+@keyframes frontstage {
+  0% {}
+  20% {height: 100%; border-left: 10px border-color:#323232;}
+  95% {height: 100%; top: 99%; border: 50px background: transparent;}
+  100% {height: 100%; top: 99.9%; border: 50px background: transparent;}
+}
+@keyframes myanimation {
+  0% {}
+  5% {width: 100%; border-left: 10px border-color:#323232;}
+  100% {width: 100%; left: 99.9%; border: 50px background: transparent;}
+}
